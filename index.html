@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Forman's Personal Website</title>
+    <author>Joel Forman</author>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <h4>Introduction</h4>
+            <p>Hello, my name is Joel Forman and I am a UC Berkeley student and aspiring software engineer.</p>
+            <h4>Specialization</h4>
+            <p>I specialize in backend software development in C++ and Python.</p>
+            <h4>Experience</h4>
+            <p>I have completed several software engineering internships, as well as completed several CS projects.</p>
+            <h5>Skills</h5>
+            <p>My skills include:</p>
+            <ul>
+              <li><h6>C++</h6></li>
+              <li><h6>Python</h6></li>
+              <li><h6>Java</h6></li>
+            </ul>
+            <br><br>
+        </section>
+        <section id="work">
+            <h1>My Work</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>Project 1</h2>
+                    <img src="https://via.placeholder.com/200x200?text=Software+Engineering+Project+1" alt="Software Engineering Project 1">
+                    <p>This project involved developing a custom CMS for a client to manage their website content. The system was built using PHP and MySQL and allowed for easy content editing and publishing.</p>
+                    <button><a href="https://www.example.com" target="_blank">Learn More</a></button>
+                </div>
+                <div class="grid-item">
+                    <h2>Project 2</h2>
+                    <img src="https://via.placeholder.com/200x200?text=Software+Engineering+Project+2" alt="Software Engineering Project 2">
+                    <p>This project involved creating a web-based dashboard for tracking project metrics and team performance. The dashboard was built using React and integrated with various data sources to provide real-time updates.</p>
+                    <button><a href="https://www.example.com" target="_blank">Learn More</a></button>
+                </div>
+                <div class="grid-item">
+                    <h2>Project 3</h2>
+                    <img src="https://via.placeholder.com/200x200?text=Software+Engineering+Project+3" alt="Software Engineering Project 3">
+                    <p>This project involved developing a custom e-commerce platform for a client to sell their products online. The platform was built using Magento and integrated with various payment and shipping providers to provide a seamless checkout experience.</p>
+                    <button><a href="https://www.example.com" target="_blank">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+                <h1>Contact Me</h1>
+                <h4>My email:</h4>
+                <p>joel.forman@berkeley.edu</p>
+                <h4>My instagram:</h4>
+                <p>joel.forman</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+                    <input type="submit" id="form-submit" value="Send">
+                </form>
+            </div>
+        </section>
+        <script>
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+              const sendButton = document.getElementById("form-submit");
+              sendButton.value = "Clicked!";
+            });
+          </script>
+    </main>
+</body>
+</html>
